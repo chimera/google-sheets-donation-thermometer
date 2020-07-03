@@ -13,13 +13,13 @@ The PHP component is required because Google's publishing feature often doesn't 
 Make a Google Sheet like this:
 
 ```
-Sum:	=SUM(B2:B)	Name	Source	Email
-3/24/2020	$600.00	John Doe	Credit card	john@example.com		
+Sum:       =SUM(B2:B)  Name      Source       Email
+3/24/2020  $600.00     John Doe  Credit card  john@example.com		
 ```
 
-Make sure that cell B1 is an actual formula `=SUM(B2:B)` that adds up all the rows, you may have to edit it manually to make it a formula (no quote marks before or after the formula). If you can't use cell B1 for your total, that's okay, just make sure that instead of typing "b1" below you type the cell number you actually want to use.
+Make sure that cell B1 is an actual formula `=SUM(B2:B)` that adds up all the rows, you may have to edit it manually to make it a formula (no apostrophe mark before the formula). If you can't use cell B1 for your total, that's okay, just make sure that instead of typing "b1" below you type the cell number you actually want to use to be the "current value" for your thermometer.
 
-Then go to File, Publish to the Web, and choose to Link Sheet1 as a Comma-separated values file.
+Then go to File, Publish to the Web, and choose to Link Sheet1 as a Comma-separated values file. (Or whichever sheet has the total you want to use.)
 Copy the URL (looks like https://docs.google.com/spreadsheets/d/e/2PACX-1vS...cFd-NZEj/pub?gid=0&single=true&output=csv )
 
 ## Installation
