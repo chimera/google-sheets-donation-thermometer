@@ -1,5 +1,6 @@
 <!--
 Donation Thermometer Script
+https://github.com/chimera/google-sheets-donation-thermometer
 Copyright 2020 Chimera Art Space
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,6 +20,7 @@ limitations under the License.
 <script type="text/javascript">
 var sheetPublicWebUrl = "YOUR_PROXY_URL_HERE";
 var maxValue = 10000;
+var height = 300;
 
 var req = new XMLHttpRequest();
 req.open('GET', sheetPublicWebUrl, true);
@@ -26,7 +28,7 @@ req.onload = function() {
   result = req.responseText;
   cur = Number(result.replace(/[^0-9\.-]+/g,""))
   document.getElementById("thermometer").innerHTML =
-  '<img src="https://www.abcfundraising.com/thermometer-generator?max='+maxValue+'&cur='+cur+'&symbol=%24&color=green" height="300"/>';
+  '<img src="https://www.abcfundraising.com/thermometer-generator?max='+maxValue+'&cur='+cur+'&symbol=%24&color=green" height="'+height+'"/>';
 };
 req.send(null);
 </script>
