@@ -8,6 +8,22 @@ In order to use these scripts you'll need a web server capable of running PHP sc
 
 The PHP component is required because Google's publishing feature often doesn't include adequate 'Access-Control-Allow-Origin' headers to access your spreadsheet directly via Javascript.
 
+## License
+
+Copyright 2020 Chimera Art Space
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
 ## Setup
 
 Make a Google Sheet like this. The columns don't really matter, what matters is that the total current dollar amount you want displayed in the thermostat is being calculated in a cell we can access later. In this example we're using cell B1. Feel free to make the spreadsheet fit your needs (for example I like to also track whether we sent thank-yous or rewards in this sheet.)
