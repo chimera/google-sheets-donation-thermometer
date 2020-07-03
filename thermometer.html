@@ -1,0 +1,15 @@
+<div id="thermometer" style="text-align: center"></div>
+<script type="text/javascript">
+var sheetPublicWebUrl = "YOUR_PROXY_URL_HERE";
+var maxValue = 10000;
+
+var req = new XMLHttpRequest();
+req.open('GET', sheetPublicWebUrl, true);
+req.onload = function() {
+  result = req.responseText;
+  cur = Number(result.replace(/[^0-9\.-]+/g,""))
+  document.getElementById("thermometer").innerHTML =
+  '<img src="https://www.abcfundraising.com/thermometer-generator?max='+maxValue+'&cur='+cur+'&symbol=%24&color=green" height="300"/>';
+};
+req.send(null);
+</script>
