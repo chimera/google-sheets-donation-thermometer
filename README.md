@@ -10,12 +10,13 @@ The PHP component is required because Google's publishing feature often doesn't 
 
 ## Setup
 
-Make a Google Sheet like this:
+Make a Google Sheet like this. The columns don't really matter, what matters is that the total current dollar amount you want displayed in the thermostat is being calculated in a cell we can access later. In this example we're using cell B1. Feel free to make the spreadsheet fit your needs (for example I like to also track whether we sent thank-yous or rewards in this sheet.)
 
-```
-Sum:       =SUM(B2:B)  Name      Source       Email
-3/24/2020  $600.00     John Doe  Credit card  john@example.com		
-```
+
+| Sum:     | =SUM(B2:B) | Name     | Email            |
+| -------- | ---------- | -------- | ---------------- |
+|3/24/2020 | $600.00    | John Doe | john@example.com |
+
 
 Make sure that cell B1 is an actual formula `=SUM(B2:B)` that adds up all the rows, you may have to edit it manually to make it a formula (no apostrophe mark before the formula). If you can't use cell B1 for your total, that's okay, just make sure that instead of typing "b1" below you type the cell number you actually want to use to be the "current value" for your thermometer.
 
